@@ -3,10 +3,9 @@
 
 using namespace std;
 
+string frase = "";
 
-int main(){
-
-  string frase = "";
+int main(){  
   string letra = "";
   char _2[3] = {'A', 'B', 'C'};
   char _3[3] = {'D', 'E', 'F'};
@@ -31,35 +30,44 @@ int main(){
     // Essa parte converte os números de tecla a pressionar e quantas vezes pressionar em int para usar no SwitchCase
     int tecla_a_pressionar = stoi(letra.substr(1, 1));
     int vezes_a_pressionar = stoi(letra.substr(3, 1));
-
+    
     switch (tecla_a_pressionar) {
       case 2:
         cout << "\n\n" << _2[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _2[vezes_a_pressionar - 1];
         break;
       case 3:
         cout << "\n\n" << _3[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _3[vezes_a_pressionar - 1];
         break;
       case 4:
         cout << "\n\n" << _4[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _4[vezes_a_pressionar - 1];
         break;
       case 5:
         cout << "\n\n" << _5[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _5[vezes_a_pressionar - 1];        
         break;
       case 6:
         cout << "\n\n" << _6[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _6[vezes_a_pressionar - 1];
         break;
       case 7:
         cout << "\n\n" << _7[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _7[vezes_a_pressionar - 1];
         break;
       case 8:
         cout << "\n\n" << _8[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _8[vezes_a_pressionar - 1];
         break;
       case 9:
         cout << "\n\n" << _9[vezes_a_pressionar - 1] << "\n\n";
+        frase = frase + _9[vezes_a_pressionar - 1];
         break;
       default:
         cout << "\n\nTá tudo errado";
     }
+    cout << frase<< endl;
   
   }
 
