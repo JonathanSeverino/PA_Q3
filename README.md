@@ -1,2 +1,2 @@
 # PA_Q3
-## Avaliação de progrmação aplicada. Atividade 3
+## Avaliação de programação aplicada. Atividade 3
